@@ -38,6 +38,7 @@ public class RedisUtils {
     	String adds = properties.getProperty("redis.adds");
     	int port = Integer.parseInt(properties.getProperty("redis.port"));
     	password = properties.getProperty("redis.password");
+        password = "admin";
     	
         config = new JedisPoolConfig();
         config.setMaxIdle(100);

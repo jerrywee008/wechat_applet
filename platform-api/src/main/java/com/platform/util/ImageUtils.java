@@ -4,23 +4,17 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.text.AttributedCharacterIterator;
 import java.text.AttributedString;
 
 import javax.imageio.ImageIO;
 
 import java.awt.Image;
-import java.awt.image.BufferedImage;
 import java.io.*;
-import javax.imageio.ImageIO;
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGImageEncoder;
 
 public class ImageUtils {
 	
@@ -199,8 +193,7 @@ public class ImageUtils {
             //创建文件输出流
             FileOutputStream out = new FileOutputStream(imgdist);
             //将图片按JPEG压缩，保存到out中
-            JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(out);
-            encoder.encode(tag);
+            ImageIO.write(tag, "jpg", out);
             //关闭文件输出流
             out.close();
         } catch (Exception ef) {

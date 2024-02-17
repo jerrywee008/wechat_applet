@@ -1,0 +1,18 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+      // Java配置  
+    "java.jdt.ls.java.home": "/Users/jerrywee/.sdkman/candidates/java/current",
+    "java.dependencies.enabled": true,
+    
+    // 是否自动更新Java构建配置
+    "java.configuration.updateBuildConfiguration": "automatic",
+    
+    // 自动启动Community Server Connector扩展
+    "rsp-ui.enableStartServerOnActivation": [
+        {
+        "id": "redhat.vscode-community-server-connector",
+        "name": "Community Server Connector",
+        "startOnActivation": true
+        }
+    ],
+}

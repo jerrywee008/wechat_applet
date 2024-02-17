@@ -25,7 +25,6 @@ import com.platform.utils.Query;
 import com.platform.utils.R;
 import com.platform.utils.excel.ExcelExport;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
 
 /**
  * 用户管理
@@ -43,7 +42,6 @@ public class CustomerController {
     /**
      * 查看列表
      */
-    @Ignore
     @RequestMapping("/list")
     public R list(@RequestParam Map<String, Object> params) {
         //查询列表数据
@@ -76,7 +74,6 @@ public class CustomerController {
     /**
      * 查看信息
      */
-    @Ignore
     @RequestMapping("/info/{id}")
     public R info(@PathVariable("id") Integer id) {
         CustomerEntity customer1=new  CustomerEntity();
@@ -89,7 +86,6 @@ public class CustomerController {
     /**
      * 保存
      */
-    @Ignore
     @RequestMapping("/save")
     public R save(@RequestBody CustomerEntity customerEntity) {
         customerService.save(customerEntity);
@@ -100,7 +96,6 @@ public class CustomerController {
     /**
      * 修改
      */
-    @Ignore
     @RequestMapping("/update")
     public R update(@RequestBody CustomerEntity customerEntity) {
         customerService.update(customerEntity);
@@ -111,8 +106,7 @@ public class CustomerController {
     /**
      * 删除
      */
-    @Ignore
-    @RequestMapping("/delete")
+    
     public R delete(@RequestBody Integer[] ids) {
         customerService.deleteBatch(ids);
 
@@ -122,7 +116,6 @@ public class CustomerController {
     /**
      * 查看所有列表
      */
-    @Ignore
     @RequestMapping("/queryAll")
     public R queryAll(@RequestParam Map<String, Object> params) {
 
@@ -134,7 +127,6 @@ public class CustomerController {
     /**
      * 总计
      */
-    @Ignore
     @RequestMapping("/queryTotal")
     public R queryTotal(@RequestParam Map<String, Object> params) {
         int sum = customerService.queryTotal(params);

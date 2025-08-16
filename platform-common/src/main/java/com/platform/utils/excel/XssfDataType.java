@@ -3,8 +3,8 @@ package com.platform.utils.excel;
 /**
  * XSSFDataType
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2017年10月28日 13:11:27
  */
 public enum XssfDataType {

@@ -34,8 +34,8 @@ import com.platform.validator.group.UpdateGroup;
 /**
  * 系统用户
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2016年10月31日 上午10:40:10
  */
 @RestController

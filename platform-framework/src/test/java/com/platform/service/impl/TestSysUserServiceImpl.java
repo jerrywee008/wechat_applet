@@ -12,8 +12,8 @@ import java.util.Map;
 /**
  * Service测试实现类
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2018-07-09 10:18:34
  */
 @Service("testUserService")

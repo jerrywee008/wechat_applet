@@ -2,7 +2,8 @@
 SQLyog Professional v12.09 (64 bit)
 MySQL - 8.0.13 : Database - final
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -1458,3 +1459,15 @@ insert  into `user_record`(`REPORT_ID`,`MLS_USER_ID`,`TYPES`,`TYPES_STR`,`PRICE`
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+RENAME TABLE `final`.qrtz_blob_triggers TO `final`.QRTZ_BLOB_TRIGGERS;
+RENAME TABLE `final`.qrtz_calendars TO `final`.QRTZ_CALENDARS;
+RENAME TABLE `final`.qrtz_cron_triggers TO `final`.QRTZ_CRON_TRIGGERS;
+RENAME TABLE `final`.qrtz_fired_triggers TO `final`.QRTZ_FIRED_TRIGGERS;
+RENAME TABLE `final`.qrtz_job_details TO `final`.QRTZ_JOB_DETAILS;
+RENAME TABLE `final`.qrtz_locks TO `final`.QRTZ_LOCKS;
+RENAME TABLE `final`.qrtz_paused_trigger_grps TO `final`.QRTZ_PAUSED_TRIGGER_GRPS;
+RENAME TABLE `final`.qrtz_scheduler_state TO `final`.QRTZ_SCHEDULER_STATE;
+RENAME TABLE `final`.qrtz_simple_triggers TO `final`.QRTZ_SIMPLE_TRIGGERS;
+RENAME TABLE `final`.qrtz_simprop_triggers TO `final`.QRTZ_SIMPROP_TRIGGERS;
+RENAME TABLE `final`.qrtz_triggers TO `final`.QRTZ_TRIGGERS;

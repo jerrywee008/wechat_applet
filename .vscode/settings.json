@@ -1,7 +1,7 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
       // Java配置  
-    "java.jdt.ls.java.home": "/Users/jerrywee/.sdkman/candidates/java/current",
+    "java.jdt.ls.java.home": "/Users/jerrywei/.sdkman/candidates/java/17.0.10-oracle",
     "java.dependencies.enabled": true,
     
     // 是否自动更新Java构建配置

@@ -2,7 +2,6 @@ package com.platform.api;
 
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -39,8 +38,8 @@ import io.swagger.annotations.ApiOperation;
 /**
  * API登录授权
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2017-03-23 15:31
  */
 @Api(tags = "API登录授权接口")
@@ -85,7 +84,7 @@ public class ApiAuthController extends ApiBaseAction {
 
         //获取openid
         String requestUrl = ApiUserUtils.getWebAccess(loginInfo.getCode());//通过自定义工具类组合出小程序需要的登录凭证 code
-        logger.info("》》》组合token为：" + requestUrl);
+        logger.info("》》》组合token1为：" + requestUrl);
         String res = restTemplate.getForObject(requestUrl, String.class);
         logger.info("res=="+res);
         JSONObject sessionData = JSON.parseObject(res);

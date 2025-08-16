@@ -14,8 +14,8 @@ import com.platform.interceptor.AuthorizationInterceptor;
 /**
  * 有@LoginUser注解的方法参数，注入当前登录用户
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2017-03-23 22:02
  */
 public class AppLoginUserHandlerMethodArgumentResolver implements HandlerMethodArgumentResolver {

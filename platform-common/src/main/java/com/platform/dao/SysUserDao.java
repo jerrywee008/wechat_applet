@@ -10,8 +10,8 @@ import com.platform.entity.UserWindowDto;
 /**
  * 系统用户
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2016年9月18日 上午9:34:11
  */
 public interface SysUserDao extends BaseDao<SysUserEntity> {

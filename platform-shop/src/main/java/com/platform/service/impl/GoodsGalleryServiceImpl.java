@@ -12,8 +12,8 @@ import java.util.Map;
 /**
  * Service实现类
  *
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2017-08-23 14:41:43
  */
 @Service("goodsGalleryService")

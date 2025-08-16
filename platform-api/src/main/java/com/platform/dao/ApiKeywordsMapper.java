@@ -8,8 +8,8 @@ import java.util.Map;
 /**
  * 热闹关键词表
  * 
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2017-08-11 09:16:46
  */
 public interface ApiKeywordsMapper extends BaseDao<KeywordsVo> {

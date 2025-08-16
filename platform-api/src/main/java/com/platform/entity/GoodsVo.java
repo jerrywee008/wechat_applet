@@ -7,8 +7,8 @@ import java.util.Date;
 
 
 /**
- * @author lipengjun
- * @email 939961241@qq.com
+ * @author miya
+ * @email miya@gmail.com
  * @date 2017-08-15 08:03:40
  */
 public class GoodsVo implements Serializable {
